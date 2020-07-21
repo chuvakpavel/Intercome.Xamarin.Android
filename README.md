@@ -69,10 +69,3 @@ Intercom.client().registerIdentifiedUser(registration);
 That’s it - now you’ve got a working Intercom app. However, you’ll need to register your users before you can talk to them and track their activity in your app.
 
 For more details, see [Intercom](https://developers.intercom.com/installing-intercom/docs/android-installation).
-
-##How to use
-Add a reference to the following packages:
-- Intercom.Droid.Composer
-- Intercom.Droid.Composer.Gallery
-- Intercom.Droid.SDK.Base
-- Intercom.Droid.SDK.FCM
