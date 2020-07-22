@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>Intercom.Xamarin.iOS</id>
+    <version>6.1.0</version>
+    <title>Intercom.Xamarin.iOS</title>
+    <authors>Pavel Chuvak</authors>
+    <owners>Pavel Chuvak</owners>
+    <projectUrl>https://github.com/chuvakpavel/Intercome.Xamarin.Android</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <description>Xamarin binding for Intercom iOS library.</description>
+    <copyright>Copyright 2020</copyright>
+    <tags>Intercom, iOS, Xamarin</tags>
+    <dependencies>
+      <group targetFramework="Xamarin.iOS11.0">
+        
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.iOS\bin\Release\Intercom.iOS.dll" target="lib\Xamarin.iOS11.0\Intercom.iOS.dll" />
+  </files>
+</package>
