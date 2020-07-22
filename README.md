@@ -1,6 +1,7 @@
 # Intercom.Xamarin.Android
 
 ## Introduction 
+Xamarin Binding for Intercome 6.1.0
 The Intercom SDK for Android enables you to use the Intercom Messenger in your app, have conversations with your customers, send rich outbound messages, show your Help Center, and track events.
 
 ## Installation

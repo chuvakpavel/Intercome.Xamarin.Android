@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
-    <id>Intercom.Android</id>
-    <version>1.0.0</version>
-    <title>Intercom</title>
+    <id>Intercom.Xamarin.Android</id>
+    <version>6.1.0</version>
+    <title>Intercom.Xamarin.Android</title>
     <authors>Pavel Chuvak</authors>
     <owners>Pavel Chuvak</owners>
     <projectUrl>https://github.com/chuvakpavel/Intercome.Xamarin.Android</projectUrl>
@@ -26,7 +26,6 @@
     <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Droid.Composer.Gallery\bin\Release\Intercom.Droid.Composer.Gallery.dll" target="lib\MonoAndroid9\Intercom.Droid.Composer.Gallery.dll" />
     <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Droid.SDK.Base\bin\Release\Intercom.Droid.SDK.Base.dll" target="lib\MonoAndroid9\Intercom.Droid.SDK.Base.dll" />
     <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Droid.SDK.FCM\bin\Release\Intercom.Droid.SDK.FCM.dll" target="lib\MonoAndroid9\Intercom.Droid.SDK.FCM.dll" />
-
     <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Droid.SDK.Base\bin\Release\FlexboxLayoutXamarinBindingAndroid.dll" target="lib\MonoAndroid9\FlexboxLayoutXamarinBindingAndroid.dll" />
   </files>
 </package>
