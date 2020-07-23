@@ -6,12 +6,16 @@ The Intercom SDK enables you to use the Intercom Messenger in your app, have con
 
 ## Installation
 
-### Step 1 - Install Intercom
+### Intercom packages
+[Intercom.Xamarin.Android](https://www.nuget.org/packages/Intercom.Xamarin.Android/6.1.0)
+[Intercom.Xamarin.iOS](https://www.nuget.org/packages/Intercom.Xamarin.iOS/)
+
+### Step 1 - Add refernces to Intercom
 If you’re new to Intercom, you’ll need to create an account and start your free trial.
 
-#### Intercom.Xamarin.Android
+### Android
 
-##### Permissions
+#### Permissions
 We include the [INTERNET](https://developer.android.com/reference/android/Manifest.permission.html#INTERNET) permission by default as we need it to make network requests:
 
 ```
@@ -30,9 +34,9 @@ You can also include [VIBRATE](https://developer.android.com/reference/android/M
 <uses-permission android:name="android.permission.VIBRATE"/>
 ```
 
-#### Intercom.Xamarin.iOS
+### iOS
 
-##### Update Info.plist
+#### Update Info.plist
 **Photo Library usage:**
 Add a "Privacy - Photo Library Usage Description" entry to your Info.plist.
 
@@ -42,7 +46,7 @@ This is [required by Apple](https://developer.apple.com/library/archive/qa/qa193
 First, you'll need to get your [Intercom](https://www.intercom.com/) **app ID** and **Android API key**. To find these, just select the **'Intercom for Android/iOS'** option in your app settings.
 
 
-#### Intercom.Xamarin.Android
+### Android
 Then, initialize Intercom by calling the following in the `onCreate()` method of your application class:
 
 ```
@@ -71,7 +75,7 @@ You’ll need to update your manifest to use your application:
 
 >Intercom must be initialized inside the application `onCreate()` method. Initializing anywhere else will result in Intercom not behaving as expected and could even result in the host app crashing.
 
-#### Intercom.Xamarin.iOS
+### iOS
 Then, initialize Intercom by calling the following in the `FinishedLaunching()` method of your AppDelegate class:
 
 ```
@@ -81,13 +85,13 @@ Intercom.SetApiKey("your api key", "your app id");
 ### Step 3 - Create a user
 Finally, you’ll need to create a user, like this:
 
-#### Intercom.Xamarin.Android
+### Android
 ```
 Registration registration = Registration.create().withUserId("123456");
 Intercom.client().registerIdentifiedUser(registration);
 ```
 
-#### Intercom.Xamarin.iOS
+### iOS
 ```
 Intercom.iOS.Intercom.RegisterUnidentifiedUser();
 ```
