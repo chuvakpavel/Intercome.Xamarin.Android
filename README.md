@@ -9,6 +9,7 @@ The Intercom SDK enables you to use the Intercom Messenger in your app, have con
 ### Intercom packages
 [Intercom.Xamarin.Android](https://www.nuget.org/packages/Intercom.Xamarin.Android/6.1.0)
 [Intercom.Xamarin.iOS](https://www.nuget.org/packages/Intercom.Xamarin.iOS/)
+[Intercom.Xamarin.Forms](https://www.nuget.org/packages/Intercom.Xamarin.Forms/6.1.0)
 
 ### Step 1 - Add refernces to Intercom
 If you’re new to Intercom, you’ll need to create an account and start your free trial.
@@ -60,7 +61,7 @@ public class MainApplication : Application, Application.IActivityLifecycleCallba
     public override void OnCreate()
         {
             base.OnCreate();
-            IntercomService.Initialize(this, "your api key", "your app id");
+            Intercom.Initialize(this, "your api key", "your app id");
    }
 }
 ```
@@ -70,7 +71,7 @@ You’ll need to update your manifest to use your application:
 
 ```
 <application
-    android:name=".CustomApplication">
+    android:name=".MainApplication">
 </application>
 ```
 
@@ -91,7 +92,32 @@ All the steps before are relevant in the "Forms", but you need to change your co
 IntercomService.Initialize(this, "your api key", "your app id");
 ```
 
+**Note:** If you don't currently implement a custom application, you’ll need to create one. A custom application looks like this:
+
+```
+public class MainApplication : Application, Application.IActivityLifecycleCallbacks {
+    public override void OnCreate()
+        {
+            base.OnCreate();
+            IntercomService.Initialize(this, "your api key", "your app id");
+   }
+}
+```
+
+You’ll need to update your manifest to use your application:
+
+
+```
+<application
+    android:name=".MainApplication">
+</application>
+```
+
+IntercomService must be initialized inside the application `OnCreate()` method. Initializing anywhere else will result in Intercom not behaving as expected and could even result in the host app crashing.
+
 #### iOS
+Then, initialize Intercom by calling the following in the `FinishedLaunching()` method of your AppDelegate class:
+
 ```
 IntercomService.Initialize("your api key", "your app id");
 ```
@@ -111,6 +137,11 @@ Intercom.RegisterUserWithUserId("123456");
 ```
 
 ### Forms
+
+```
+CrossIntercomService.Current.RegisterUserWithUserId("123456");
+CrossIntercomService.Current.PresentMessenger();
+```
 
 **Available methods:**
 ```
@@ -140,12 +171,6 @@ void SetNeedsStatusBarAppearanceUpdate();
 void SetUserHash(string userHash);
 ```
 >Use them in a cross-platform project.
-
-
-```
-CrossIntercomService.Current.RegisterUserWithUserId("123456");
-CrossIntercomService.Current.PresentMessenger();
-```
 
 That’s it - now you’ve got a working Intercom app. However, you’ll need to register your users before you can talk to them and track their activity in your app.
 
