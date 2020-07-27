@@ -8,8 +8,11 @@ The Intercom SDK enables you to use the Intercom Messenger in your app, have con
 
 ### Intercom packages
 [Intercom.Xamarin.Android](https://www.nuget.org/packages/Intercom.Xamarin.Android/6.1.0)
+
 [Intercom.Xamarin.iOS](https://www.nuget.org/packages/Intercom.Xamarin.iOS/)
+
 [Intercom.Xamarin.Forms](https://www.nuget.org/packages/Intercom.Xamarin.Forms/6.1.0)
+
 
 ### Step 1 - Add refernces to Intercom
 If you’re new to Intercom, you’ll need to create an account and start your free trial.
@@ -137,10 +140,10 @@ Intercom.RegisterUserWithUserId("123456");
 ```
 
 ### Forms
+Then, register user by calling the following in the OnAppearing()` method of your Page class:
 
 ```
 CrossIntercomService.Current.RegisterUserWithUserId("123456");
-CrossIntercomService.Current.PresentMessenger();
 ```
 
 **Available methods:**
