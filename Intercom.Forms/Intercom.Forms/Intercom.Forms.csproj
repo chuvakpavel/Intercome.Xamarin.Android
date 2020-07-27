@@ -11,7 +11,7 @@
     -->
     <AssemblyName>Intercom.Forms</AssemblyName>
     <RootNamespace>Intercom.Forms</RootNamespace>
-    <PackageId>Intercom.Forms</PackageId>
+    <PackageId>Intercom.Xamarin.Forms</PackageId>
     
     <Product></Product>
     <AssemblyVersion>6.1.0.0</AssemblyVersion>
