@@ -82,6 +82,19 @@ Then, initialize Intercom by calling the following in the `FinishedLaunching()` 
 Intercom.SetApiKey("your api key", "your app id");
 ```
 
+### Forms
+All the steps before are relevant in the "Forms", but you need to change your code like this:
+
+#### Android
+```
+Intercom.Forms.IntercomService.Initialize(this, "your api key", "your app id");
+```
+
+#### iOS
+```
+Intercom.Forms.IntercomService.Initialize("your api key", "your app id");
+```
+
 ### Step 3 - Create a user
 Finally, you’ll need to create a user, like this:
 
@@ -94,6 +107,20 @@ Intercom.client().registerIdentifiedUser(registration);
 ### iOS
 ```
 Intercom.iOS.Intercom.RegisterUnidentifiedUser();
+```
+
+### Forms
+
+#### Android
+```
+Intercom.Forms.IntercomService service = new Intercom.Forms.IntercomService();
+service.RegisterUnidentifiedUser();
+```
+
+#### iOS
+```
+Intercom.Forms.IntercomService service = new Intercom.Forms.IntercomService();
+service.RegisterUnidentifiedUser();
 ```
 
 That’s it - now you’ve got a working Intercom app. However, you’ll need to register your users before you can talk to them and track their activity in your app.
