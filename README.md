@@ -47,19 +47,20 @@ First, you'll need to get your [Intercom](https://www.intercom.com/) **app ID** 
 
 
 ### Android
-Then, initialize Intercom by calling the following in the `onCreate()` method of your application class:
+Then, initialize Intercom by calling the following in the `OnCreate()` method of your application class:
 
 ```
-Intercom.initialize(this, "your api key", "your app id");
+Intercom.Initialize(this, "your api key", "your app id");
 ```
 
 **Note:** If you don't currently implement a custom application, you’ll need to create one. A custom application looks like this:
 
 ```
-public class CustomApplication extends Application {
-    @Override public void onCreate() {
-        super.onCreate();
-        Intercom.initialize(this, "your api key", "your app id");
+public class MainApplication : Application, Application.IActivityLifecycleCallbacks {
+    public override void OnCreate()
+        {
+            base.OnCreate();
+            IntercomService.Initialize(this, "your api key", "your app id");
    }
 }
 ```
@@ -73,7 +74,7 @@ You’ll need to update your manifest to use your application:
 </application>
 ```
 
->Intercom must be initialized inside the application `onCreate()` method. Initializing anywhere else will result in Intercom not behaving as expected and could even result in the host app crashing.
+>Intercom must be initialized inside the application `OnCreate()` method. Initializing anywhere else will result in Intercom not behaving as expected and could even result in the host app crashing.
 
 ### iOS
 Then, initialize Intercom by calling the following in the `FinishedLaunching()` method of your AppDelegate class:
@@ -87,12 +88,12 @@ All the steps before are relevant in the "Forms", but you need to change your co
 
 #### Android
 ```
-Intercom.Forms.IntercomService.Initialize(this, "your api key", "your app id");
+IntercomService.Initialize(this, "your api key", "your app id");
 ```
 
 #### iOS
 ```
-Intercom.Forms.IntercomService.Initialize("your api key", "your app id");
+IntercomService.Initialize("your api key", "your app id");
 ```
 
 ### Step 3 - Create a user
@@ -100,27 +101,50 @@ Finally, you’ll need to create a user, like this:
 
 ### Android
 ```
-Registration registration = Registration.create().withUserId("123456");
-Intercom.client().registerIdentifiedUser(registration);
+Registration registration = Registration.Create().WithUserId("123456");
+Intercom.Client().RegisterIdentifiedUser(registration);
 ```
 
 ### iOS
 ```
-Intercom.iOS.Intercom.RegisterUnidentifiedUser();
+Intercom.RegisterUserWithUserId("123456");
 ```
 
 ### Forms
 
-#### Android
+**Available methods:**
 ```
-Intercom.Forms.IntercomService service = new Intercom.Forms.IntercomService();
-service.RegisterUnidentifiedUser();
+void EnableLogging();
+void HandleIntercomPushNotification(Dictionary<string, string> userInfo);
+void HideMessenger();
+bool IsIntercomPushNotification(Dictionary<string, string> userInfo);
+void LogEventWithName(string name);
+void LogEventWithName(string name, Dictionary<string, string> metaData);
+void Logout();
+void PresentConversationList();
+void PresentHelpCenter();
+void PresentMessageComposer(string initialMessage);
+void PresentMessageComposer();
+void PresentMessageComposerWithInitialMessage(string message);
+void PresentMessenger();
+void RegisterUnidentifiedUser();
+void RegisterUserWithEmail(string email);
+void RegisterUserWithUserId(string userId, string email);
+void RegisterUserWithUserId(string userId);
+void Reset();
+void SetBottomPadding(float bottomPadding);
+void SetDeviceToken(string deviceToken);
+void SetInAppMessagesVisible(bool visible);
+void SetLauncherVisible(bool visible);
+void SetNeedsStatusBarAppearanceUpdate();
+void SetUserHash(string userHash);
 ```
+>Use them in a cross-platform project.
 
-#### iOS
+
 ```
-Intercom.Forms.IntercomService service = new Intercom.Forms.IntercomService();
-service.RegisterUnidentifiedUser();
+CrossIntercomService.Current.RegisterUserWithUserId("123456");
+CrossIntercomService.Current.PresentMessenger();
 ```
 
 That’s it - now you’ve got a working Intercom app. However, you’ll need to register your users before you can talk to them and track their activity in your app.
