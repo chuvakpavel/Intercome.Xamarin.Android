@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Intercom.Xamarin.iOS</id>
-    <version>6.1.0</version>
+    <version>6.0.1.1</version>
     <title>Intercom.Xamarin.iOS</title>
     <authors>Pavel Chuvak</authors>
     <owners>Pavel Chuvak</owners>
@@ -13,12 +13,12 @@
     <copyright>Copyright 2020</copyright>
     <tags>Intercom, iOS, Xamarin</tags>
     <dependencies>
-      <group targetFramework="Xamarin.iOS11.0">
+      <group targetFramework="Xamarin.iOS1.0">
         
       </group>
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.iOS\bin\Release\Intercom.iOS.dll" target="lib\Xamarin.iOS11.0\Intercom.iOS.dll" />
+    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.iOS\bin\Release\Intercom.iOS.dll" target="lib\Xamarin.iOS1.0\Intercom.iOS.dll" />
   </files>
 </package>

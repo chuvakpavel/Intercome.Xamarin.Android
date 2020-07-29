@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Intercom.Xamarin.Android</id>
-    <version>6.1.0</version>
+    <version>6.0.1.1</version>
     <title>Intercom.Xamarin.Android</title>
     <authors>Pavel Chuvak</authors>
     <owners>Pavel Chuvak</owners>
@@ -13,7 +13,7 @@
     <copyright>Copyright 2020</copyright>
     <tags>Intercom, Android, Xamarin</tags>
     <dependencies>
-      <group targetFramework="MonoAndroid9">
+      <group targetFramework="MonoAndroid4.4">
         <dependency id="Xamarin.Android.Support.v4" version="28.0.0.3" />
         <dependency id="Xamarin.Android.Support.Design" version="28.0.0.3" />
         <dependency id="Xamarin.Android.Support.Constraint.Layout" version="1.1.2" />
@@ -22,10 +22,10 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Droid.Composer\bin\Release\Intercom.Droid.Composer.dll" target="lib\MonoAndroid9\Intercom.Droid.Composer.dll" />
-    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Droid.Composer.Gallery\bin\Release\Intercom.Droid.Composer.Gallery.dll" target="lib\MonoAndroid9\Intercom.Droid.Composer.Gallery.dll" />
-    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Droid.SDK.Base\bin\Release\Intercom.Droid.SDK.Base.dll" target="lib\MonoAndroid9\Intercom.Droid.SDK.Base.dll" />
-    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Droid.SDK.FCM\bin\Release\Intercom.Droid.SDK.FCM.dll" target="lib\MonoAndroid9\Intercom.Droid.SDK.FCM.dll" />
-    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Droid.SDK.Base\bin\Release\FlexboxLayoutXamarinBindingAndroid.dll" target="lib\MonoAndroid9\FlexboxLayoutXamarinBindingAndroid.dll" />
+    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Droid.Composer\bin\Release\Intercom.Droid.Composer.dll" target="lib\MonoAndroid4.4\Intercom.Droid.Composer.dll" />
+    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Droid.Composer.Gallery\bin\Release\Intercom.Droid.Composer.Gallery.dll" target="lib\MonoAndroid4.4\Intercom.Droid.Composer.Gallery.dll" />
+    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Droid.SDK.Base\bin\Release\Intercom.Droid.SDK.Base.dll" target="lib\MonoAndroid4.4\Intercom.Droid.SDK.Base.dll" />
+    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Droid.SDK.FCM\bin\Release\Intercom.Droid.SDK.FCM.dll" target="lib\MonoAndroid4.4\Intercom.Droid.SDK.FCM.dll" />
+    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Droid.SDK.Base\bin\Release\FlexboxLayoutXamarinBindingAndroid.dll" target="lib\MonoAndroid4.4\FlexboxLayoutXamarinBindingAndroid.dll" />
   </files>
 </package>

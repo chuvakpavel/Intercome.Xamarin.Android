@@ -14,10 +14,10 @@
     <PackageId>Intercom.Xamarin.Forms</PackageId>
     
     <Product></Product>
-    <AssemblyVersion>6.1.0.0</AssemblyVersion>
-    <AssemblyFileVersion>6.1.0.0</AssemblyFileVersion>
-    <Version>6.1.0</Version>
-    <PackageVersion>6.1.0.0</PackageVersion>
+    <AssemblyVersion>6.0.1.1</AssemblyVersion>
+    <AssemblyFileVersion>6.0.1.1</AssemblyFileVersion>
+    <Version>6.0.1.1</Version>
+    <PackageVersion>6.0.1.1</PackageVersion>
     <PackOnBuild>true</PackOnBuild>
     <NeutralLanguage>en</NeutralLanguage>
     <LangVersion>default</LangVersion>
@@ -50,7 +50,7 @@
     <DisableExtraReferences>true</DisableExtraReferences>
     <Company>Pavel Chuvak</Company>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <FileVersion>6.1.0.0</FileVersion>
+    <FileVersion>6.0.1.1</FileVersion>
     
   </PropertyGroup>
 
