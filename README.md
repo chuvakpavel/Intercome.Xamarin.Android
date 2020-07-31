@@ -125,18 +125,21 @@ Then, initialize Intercom by calling the following in the `FinishedLaunching()` 
 IntercomService.Initialize("your api key", "your app id");
 ```
 
-### Step 3 - Create a user
+### Step 3 - Create a user and display messenger
 Finally, you’ll need to create a user, like this:
 
 ### Android
 ```
 Registration registration = Registration.Create().WithUserId("123456");
 Intercom.Client().RegisterIdentifiedUser(registration);
+Intercom.Client().DisplayMessenger();
 ```
 
 ### iOS
 ```
-Intercom.RegisterUserWithUserId("123456");
+Intercom.iOS.Intercom.SetApiKey("your api key", "your app id");
+Intercom.iOS.Intercom.RegisterUnidentifiedUser();
+Intercom.iOS.Intercom.PresentConversationList();
 ```
 
 ### Forms
@@ -144,6 +147,7 @@ Then, register user by calling the following in the OnAppearing()` method of you
 
 ```
 CrossIntercomService.Current.RegisterUserWithUserId("123456");
+CrossIntercomService.Current.PresentMessenger();
 ```
 
 **Available methods:**
