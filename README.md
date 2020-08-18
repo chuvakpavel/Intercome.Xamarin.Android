@@ -7,7 +7,7 @@ The Intercom SDK enables you to use the Intercom Messenger in your app, have con
 ## Installation
 
 ### Intercom packages
-[Intercom.Xamarin.Android](https://www.nuget.org/packages/Intercom.Xamarin.Android/6.1.0)
+[Intercom.Xamarin.Android](https://www.nuget.org/packages/Intercom.Xamarin.Android/7.2.0.0)
 
 [Intercom.Xamarin.iOS](https://www.nuget.org/packages/Intercom.Xamarin.iOS/)
 
