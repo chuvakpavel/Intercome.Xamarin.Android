@@ -1,8 +1,7 @@
-﻿using System;
-
-using ObjCRuntime;
+using System;
 using Foundation;
-using UIKit;
+using Intercom;
+using ObjCRuntime;
 
 namespace Intercom.iOS
 {
