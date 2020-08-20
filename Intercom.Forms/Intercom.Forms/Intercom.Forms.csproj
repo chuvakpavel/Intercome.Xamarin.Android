@@ -14,10 +14,10 @@
     <PackageId>Intercom.Xamarin.Forms</PackageId>
     
     <Product></Product>
-    <AssemblyVersion>6.0.1.1</AssemblyVersion>
-    <AssemblyFileVersion>6.0.1.1</AssemblyFileVersion>
-    <Version>6.0.1.1</Version>
-    <PackageVersion>6.0.1.1</PackageVersion>
+    <AssemblyVersion>7.2.0.0</AssemblyVersion>
+    <AssemblyFileVersion>7.2.0.0</AssemblyFileVersion>
+    <Version>7.2.0.0</Version>
+    <PackageVersion>7.2.0.0</PackageVersion>
     <PackOnBuild>true</PackOnBuild>
     <NeutralLanguage>en</NeutralLanguage>
     <LangVersion>default</LangVersion>
@@ -50,7 +50,7 @@
     <DisableExtraReferences>true</DisableExtraReferences>
     <Company>Pavel Chuvak</Company>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <FileVersion>6.0.1.1</FileVersion>
+    <FileVersion>7.2.0.0</FileVersion>
     
   </PropertyGroup>
 
@@ -59,7 +59,7 @@
     <GenerateDocumentationFile>false</GenerateDocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)'=='Release' ">
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
@@ -116,6 +116,24 @@
   <ItemGroup Condition="'$(TargetFramework)' == 'MonoAndroid90'">
     <PackageReference Include="Xamarin.Android.Support.Constraint.Layout">
       <Version>1.1.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Browser">
+      <Version>1.2.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.ConstraintLayout">
+      <Version>1.1.3.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Legacy.Support.V4">
+      <Version>1.0.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData">
+      <Version>2.2.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.RecyclerView">
+      <Version>1.1.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Google.Android.Material">
+      <Version>1.0.0.1</Version>
     </PackageReference>
   </ItemGroup>
 

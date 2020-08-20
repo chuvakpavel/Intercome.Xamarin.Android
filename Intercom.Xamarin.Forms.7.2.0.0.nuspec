@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Intercom.Xamarin.Forms</id>
+    <version>7.2.0.0</version>
+    <title>Intercom.Forms Plugin for Xamarin</title>
+    <authors>Pavel Chuvak</authors>
+    <owners>Pavel Chuvak</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <description>Description</description>
+    <copyright>Copyright 2020</copyright>
+    <tags>xamarin, ios, android, xamarin.forms, Intercom.Forms</tags>
+    <repository url="https://github.com/chuvakpavel/Intercome.Xamarin.Android" />
+    <dependencies>
+      <group targetFramework=".NETStandard1.0">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Forms" version="4.7.0.1179" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="MonoAndroid9.0">
+        <dependency id="Xamarin.Android.Support.Constraint.Layout" version="1.1.2" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Forms" version="4.7.0.1179" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.AndroidX.RecyclerView" version="1.1.0.2" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.AndroidX.Lifecycle.LiveData" version="2.2.0.2" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.AndroidX.ConstraintLayout" version="1.1.3.2" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.AndroidX.Browser" version="1.2.0.2" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Google.Android.Material" version="1.0.0.1" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.AndroidX.Legacy.Support.V4" version="1.0.0.2" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="Xamarin.iOS1.0">
+        <dependency id="Xamarin.Forms" version="4.7.0.1179" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Xamarin.Forms" version="4.7.0.1179" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Java.Interop" targetFramework="MonoAndroid9.0" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Forms\Intercom.Forms\bin\Release\netstandard1.0\Intercom.Forms.dll" target="lib\netstandard1.0\Intercom.Forms.dll" />
+    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Forms\Intercom.Forms\bin\Release\netstandard1.0\Intercom.Forms.xml" target="lib\netstandard1.0\Intercom.Forms.xml" />
+    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Forms\Intercom.Forms\bin\Release\netstandard2.0\Intercom.Forms.dll" target="lib\netstandard2.0\Intercom.Forms.dll" />
+    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Forms\Intercom.Forms\bin\Release\netstandard2.0\Intercom.Forms.xml" target="lib\netstandard2.0\Intercom.Forms.xml" />
+    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Forms\Intercom.Forms\bin\Release\xamarin.ios10\Intercom.Forms.dll" target="lib\xamarinios10\Intercom.Forms.dll" />
+    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Forms\Intercom.Forms\bin\Release\xamarin.ios10\Intercom.Forms.xml" target="lib\xamarinios10\Intercom.Forms.xml" />
+    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Forms\Intercom.Forms\bin\Release\xamarin.ios10\Intercom.iOS.dll" target="lib\xamarinios10\Intercom.iOS.dll" />
+    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Forms\Intercom.Forms\bin\Release\monoandroid90\Intercom.Forms.dll" target="lib\monoandroid90\Intercom.Forms.dll" />
+    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Forms\Intercom.Forms\bin\Release\monoandroid90\Intercom.Forms.xml" target="lib\monoandroid90\Intercom.Forms.xml" />
+    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Forms\Intercom.Forms\bin\Release\monoandroid90\Intercom.Droid.SDK.Base.dll" target="lib\monoandroid90\Intercom.Droid.SDK.Base.dll" />
+    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Forms\Intercom.Forms\bin\Release\monoandroid90\Intercom.Droid.SDK.Base.xml" target="lib\monoandroid90\Intercom.Droid.SDK.Base.xml" />
+    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Forms\Intercom.Forms\bin\Release\monoandroid90\Intercom.Droid.Composer.dll" target="lib\monoandroid90\Intercom.Droid.Composer.dll" />
+    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Forms\Intercom.Forms\bin\Release\monoandroid90\Intercom.Droid.Composer.xml" target="lib\monoandroid90\Intercom.Droid.Composer.xml" />
+    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Forms\Intercom.Forms\bin\Release\monoandroid90\Intercom.Droid.Composer.Gallery.dll" target="lib\monoandroid90\Intercom.Droid.Composer.Gallery.dll" />
+    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Forms\Intercom.Forms\bin\Release\monoandroid90\Intercom.Droid.Composer.Gallery.xml" target="lib\monoandroid90\Intercom.Droid.Composer.Gallery.xml" />
+    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Forms\Intercom.Forms\bin\Release\monoandroid90\Intercom.Droid.SDK.FCM.dll" target="lib\monoandroid90\Intercom.Droid.SDK.FCM.dll" />
+    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Forms\Intercom.Forms\bin\Release\monoandroid90\Intercom.Droid.SDK.FCM.xml" target="lib\monoandroid90\Intercom.Droid.SDK.FCM.xml" />
+    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Forms\Intercom.Forms\bin\Release\monoandroid90\FlexboxLayoutXamarinBindingAndroid.dll" target="lib\monoandroid90\FlexboxLayoutXamarinBindingAndroid.dll" />
+  </files>
+</package>
