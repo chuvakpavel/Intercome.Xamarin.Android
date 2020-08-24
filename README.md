@@ -1,17 +1,17 @@
 # Intercom.Xamarin
 
 ## Introduction 
-Xamarin Binding for Intercom 6.1.0.
+Xamarin Binding for Intercom 7.2.0.
 The Intercom SDK enables you to use the Intercom Messenger in your app, have conversations with your customers, send rich outbound messages, show your Help Center, and track events.
 
 ## Installation
 
 ### Intercom packages
-[Intercom.Xamarin.Android](https://www.nuget.org/packages/Intercom.Xamarin.Android/7.2.0.0)
+[Intercom.Xamarin.Android](https://www.nuget.org/packages/Intercom.Xamarin.Android/)
 
 [Intercom.Xamarin.iOS](https://www.nuget.org/packages/Intercom.Xamarin.iOS/)
 
-[Intercom.Xamarin.Forms](https://www.nuget.org/packages/Intercom.Xamarin.Forms/6.1.0)
+[Intercom.Xamarin.Forms](https://www.nuget.org/packages/Intercom.Xamarin.Forms/)
 
 
 ### Step 1 - Add refernces to Intercom
@@ -182,3 +182,43 @@ void SetUserHash(string userHash);
 That’s it - now you’ve got a working Intercom app. However, you’ll need to register your users before you can talk to them and track their activity in your app.
 
 For more details, see [Intercom for Android](https://developers.intercom.com/installing-intercom/docs/android-installation) or [Intercom for iOS](https://developers.intercom.com/installing-intercom/docs/ios-installation).
+
+## Changelog
+
+### Version 7.1.0
+
+### 📱 New Feature: Mobile Carousels 
+ 
+Bring your best features. We'll bring the spotlight. Use Mobile Carousels to connect with app users at every touchpoint—show them around, provide support, and highlight features you know they'll love.
+
+Mobile Carousels are a multi-screen message designed to feel right at home in your mobile app. 
+
+* Rich multi-screen messages.
+* Highly customizable, right inside Intercom.
+* Request device permissions like push notifications, camera, location and more.
+* Deep link into your app, open URLs, or start conversations in the Intercom Messenger.
+* Target the right message to the right audience.
+* A/B testing and control groups.
+* Goal tracking.
+* Schedule your Mobile Carousel with ease.
+
+Upgrade to the latest version of the mobile SDK today to use the feature. No additional integration work required.
+
+### [Learn more about Mobile Carousels](https://www.intercom.com/mobile-carousels)
+
+<a href="https://product-education.wistia.com/medias/4y7for3aya " target="_blank"><img  src="https://user-images.githubusercontent.com/3185423/84791321-5581cf00-afea-11ea-848e-d29fbd657e10.png"></a>
+
+![Carousel - Made for mobile - Red](https://user-images.githubusercontent.com/5046761/84787741-439e2d00-afe6-11ea-9ff8-a1ed7c4850d7.png)
+
+![anrdroid_standard](https://user-images.githubusercontent.com/3185423/84802829-0b541a00-aff9-11ea-9e7f-1613e8d7d369.gif)
+
+![Carousel - Permissions - Android - Yellow](https://user-images.githubusercontent.com/5046761/84787743-439e2d00-afe6-11ea-96fd-9aebd745fa18.png)
+
+
+### 📱 Closed Conversations
+
+The mobile SDK now respects the `prevent replies to closed conversations` setting if you have it enabled. The text composer will be disabled for closed conversations, and your users will be able to start a new conversation if they need to. The UI updates in real time as the conversation takes place.
+
+![closed convo android](https://user-images.githubusercontent.com/5046761/84785550-8579a400-afe3-11ea-978d-49cba15cf54c.gif)
+
+For more details, see [Intercom for Android changelog](https://github.com/intercom/intercom-android/blob/master/CHANGELOG.md) or [Intercom for iOS changelog](https://github.com/intercom/intercom-ios/blob/master/CHANGELOG.md).
