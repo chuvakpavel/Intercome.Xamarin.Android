@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Intercom.Xamarin.Android</id>
-    <version>7.2.0.0</version>
+    <version>10.6.1.1</version>
     <title>Intercom.Xamarin.Android</title>
     <authors>Pavel Chuvak</authors>
     <owners>Pavel Chuvak</owners>
@@ -14,24 +14,48 @@
     <tags>Intercom, Android, Xamarin</tags>
     <dependencies>
       <group targetFramework="MonoAndroid4.4">
+        <dependency id="Square.Retrofit2" version="2.9.0" />
+        <dependency id="Xamarin.Android.Support.Constraint.Layout" version="2.0.1" />
         <dependency id="Xamarin.Android.Support.v4" version="28.0.0.3" />
         <dependency id="Xamarin.Android.Support.Design" version="28.0.0.3" />
-        <dependency id="Xamarin.Android.Support.Constraint.Layout" version="1.1.2" />
-		<dependency id="Xamarin.AndroidX.Browser" version="1.2.0.2" />
-		<dependency id="Xamarin.AndroidX.ConstraintLayout" version="1.1.3.2" />
-		<dependency id="Xamarin.AndroidX.Core" version="1.2.0.2" />
-		<dependency id="Xamarin.AndroidX.Legacy.Support.V4" version="1.0.0.2" />
-		<dependency id="Xamarin.AndroidX.Lifecycle.LiveData" version="2.2.0.2" />
-		<dependency id="Xamarin.Google.Android.Material" version="1.0.0.1" />
-        <dependency id="FlexboxLayoutXamarinBindingAndroid" version="1.0.2" />
+    		<dependency id="Xamarin.AndroidX.Browser" version="1.3.0.8" />
+        <dependency id="Xamarin.AndroidX.ConstraintLayout" version="2.1.1" />
+        <dependency id="Xamarin.AndroidX.ConstraintLayout.Solver" version="2.0.4.5" />
+        <dependency id="Xamarin.AndroidX.Core" version="1.6.0.3" />
+        <dependency id="Xamarin.AndroidX.Legacy.Support.V4" version="1.0.0.10" />
+        <dependency id="Xamarin.AndroidX.Lifecycle.LiveData" version="2.3.1.3" />
+        <dependency id="Xamarin.Google.Android.Material" version="1.3.0.1" />
+        <dependency id="XAB.FlexboxLayout" version="2.0.1" />
+        <dependency id="GoogleGson" version="2.8.6" />
+        <dependency id="Square.OkHttp3" version="4.9.2.1" />
+        <dependency id="Square.Retrofit2" version="2.9.0" />
+        <dependency id="Square.Retrofit2.ConverterGson" version="2.9.0" />
+        <dependency id="Xamarin.Android.JetBrains.KotlinX_Serialization_Json" version="1.3.1" />
+        <dependency id="Xamarin.Android.SquareUp.Otto" version="1.3.8.2" />
+        <dependency id="Xamarin.AndroidX.DataBinding.ViewBinding" version="7.0.3" />
+        <dependency id="Xamarin.AndroidX.Lifecycle.Common.Java8" version="2.3.1.3" />
+        <dependency id="Xamarin.AndroidX.Lifecycle.Runtime.Ktx" version="2.3.1.3" />
+        <dependency id="Xamarin.AndroidX.Lifecycle.ViewModel.Ktx" version="2.3.1.3" />
+        <dependency id="Xamarin.Kotlin.StdLib" version="1.5.31.2" />
+        <dependency id="Xamarin.KotlinX.Coroutines.Android" version="1.5.2.2" />
+        <dependency id="Xamarin.KotlinX.Coroutines.Core" version="1.5.2.2" />
+        <dependency id="XamarinLibrary.Xamarin.Android.Facebook.Shimmer" version="0.5.0" />
       </group>
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Droid.Composer\bin\Release\Intercom.Droid.Composer.dll" target="lib\MonoAndroid4.4\Intercom.Droid.Composer.dll" />
-    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Droid.Composer.Gallery\bin\Release\Intercom.Droid.Composer.Gallery.dll" target="lib\MonoAndroid4.4\Intercom.Droid.Composer.Gallery.dll" />
-    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Droid.SDK.Base\bin\Release\Intercom.Droid.SDK.Base.dll" target="lib\MonoAndroid4.4\Intercom.Droid.SDK.Base.dll" />
-    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Droid.SDK.FCM\bin\Release\Intercom.Droid.SDK.FCM.dll" target="lib\MonoAndroid4.4\Intercom.Droid.SDK.FCM.dll" />
-    <file src="C:\Users\Admin\source\repos\Intercom\Intercom.Droid.SDK.Base\bin\Release\FlexboxLayoutXamarinBindingAndroid.dll" target="lib\MonoAndroid4.4\FlexboxLayoutXamarinBindingAndroid.dll" />
+    <file src="C:\Users\zanud\Documents\Work\Intercome.Xamarin.Android\Coil.Base\bin\Release\Coil.Base.dll" target="lib\MonoAndroid4.4\Coil.Base.dll" />
+    <file src="C:\Users\zanud\Documents\Work\Intercome.Xamarin.Android\Coil.Gif\bin\Release\Coil.Gif.dll" target="lib\MonoAndroid4.4\Coil.Gif.dll" />
+    <file src="C:\Users\zanud\Documents\Work\Intercome.Xamarin.Android\Coil.Video\bin\Release\Coil.Video.dll" target="lib\MonoAndroid4.4\Coil.Video.dll" />
+    <file src="C:\Users\zanud\Documents\Work\Intercome.Xamarin.Android\Intercom.Android.Commons\bin\Release\Intercom.Android.Commons.dll" target="lib\MonoAndroid4.4\Intercom.Android.Commons.dll" />
+    <file src="C:\Users\zanud\Documents\Work\Intercome.Xamarin.Android\Intercom.Droid.Composer\bin\Release\Intercom.Droid.Composer.dll" target="lib\MonoAndroid4.4\Intercom.Droid.Composer.dll" />
+    <file src="C:\Users\zanud\Documents\Work\Intercome.Xamarin.Android\Intercom.Droid.Composer.Gallery\bin\Release\Intercom.Droid.Composer.Gallery.dll" target="lib\MonoAndroid4.4\Intercom.Droid.Composer.Gallery.dll" />
+    <file src="C:\Users\zanud\Documents\Work\Intercome.Xamarin.Android\Intercom.Droid.SDK.Base\bin\Release\Intercom.Droid.SDK.Base.dll" target="lib\MonoAndroid4.4\Intercom.Droid.SDK.Base.dll" />
+    <file src="C:\Users\zanud\Documents\Work\Intercome.Xamarin.Android\Intercom.Droid.SDK.FCM\bin\Release\Intercom.Droid.SDK.FCM.dll" target="lib\MonoAndroid4.4\Intercom.Droid.SDK.FCM.dll" />
+    <file src="C:\Users\zanud\Documents\Work\Intercome.Xamarin.Android\Intercom.Twig\bin\Release\Intercom.Twig.dll" target="lib\MonoAndroid4.4\Intercom.Twig.dll" />
+    <file src="C:\Users\zanud\Documents\Work\Intercome.Xamarin.Android\Kotlin.Parcelize.Runtime\bin\Release\Kotlin.Parcelize.Runtime.dll" target="lib\MonoAndroid4.4\Kotlin.Parcelize.Runtime.dll" />
+    <file src="C:\Users\zanud\Documents\Work\Intercome.Xamarin.Android\Kotlinx.Serialization.Json\bin\Release\Kotlinx.Serialization.Json.dll" target="lib\MonoAndroid4.4\Kotlinx.Serialization.Json.dll" />
+    <file src="C:\Users\zanud\Documents\Work\Intercome.Xamarin.Android\Nexus.Android.Client\bin\Release\Nexus.Android.Client.dll" target="lib\MonoAndroid4.4\Nexus.Android.Client.dll" />
+    <file src="C:\Users\zanud\Documents\Work\Intercome.Xamarin.Android\Retrofit2.Kotlinx.Serialization.Converter\bin\Release\Retrofit2.Kotlinx.Serialization.Converter.dll" target="lib\MonoAndroid4.4\Retrofit2.Kotlinx.Serialization.Converter.dll" />
   </files>
 </package>
