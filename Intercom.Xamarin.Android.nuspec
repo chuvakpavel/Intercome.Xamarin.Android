@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Intercom.Xamarin.Android</id>
-    <version>10.6.1.1</version>
+    <version>10.6.3</version>
     <title>Intercom.Xamarin.Android</title>
     <authors>Pavel Chuvak</authors>
     <owners>Pavel Chuvak</owners>
@@ -39,12 +39,14 @@
         <dependency id="Xamarin.Kotlin.StdLib" version="1.5.31.2" />
         <dependency id="Xamarin.KotlinX.Coroutines.Android" version="1.5.2.2" />
         <dependency id="Xamarin.KotlinX.Coroutines.Core" version="1.5.2.2" />
+        <dependency id="Xamarin.Io.CoilKt.Coil" version="1.4.0" />
+        <dependency id="Xamarin.Io.CoilKt.CoilBase" version="1.4.0" />
         <dependency id="XamarinLibrary.Xamarin.Android.Facebook.Shimmer" version="0.5.0" />
       </group>
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\zanud\Documents\Work\Intercome.Xamarin.Android\Coil.Base\bin\Release\Coil.Base.dll" target="lib\MonoAndroid4.4\Coil.Base.dll" />
+    <file src="C:\Users\zanud\Documents\Work\Intercome.Xamarin.Android\Coil.Compose\bin\Release\Coil.Compose.dll" target="lib\MonoAndroid4.4\Coil.Compose.dll" />
     <file src="C:\Users\zanud\Documents\Work\Intercome.Xamarin.Android\Coil.Gif\bin\Release\Coil.Gif.dll" target="lib\MonoAndroid4.4\Coil.Gif.dll" />
     <file src="C:\Users\zanud\Documents\Work\Intercome.Xamarin.Android\Coil.Video\bin\Release\Coil.Video.dll" target="lib\MonoAndroid4.4\Coil.Video.dll" />
     <file src="C:\Users\zanud\Documents\Work\Intercome.Xamarin.Android\Intercom.Android.Commons\bin\Release\Intercom.Android.Commons.dll" target="lib\MonoAndroid4.4\Intercom.Android.Commons.dll" />

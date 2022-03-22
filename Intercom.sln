@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coil.Video", "Coil.Video\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kotlin.Parcelize.Runtime", "Kotlin.Parcelize.Runtime\Kotlin.Parcelize.Runtime.csproj", "{73ED8C3B-AF8C-4CB1-BFCC-D3447AFB66A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coil.Compose", "Coil.Compose\Coil.Compose.csproj", "{6F0FAC30-6C9D-4E04-A81F-9EE547B4C750}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
