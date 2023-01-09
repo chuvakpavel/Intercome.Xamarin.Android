@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Intercom.Xamarin.Android</id>
-    <version>10.6.3.1</version>
+    <version>10.6.3.5</version>
     <title>Intercom.Xamarin.Android</title>
     <authors>Pavel Chuvak</authors>
     <owners>Pavel Chuvak</owners>
@@ -14,10 +14,6 @@
     <tags>Intercom, Android, Xamarin</tags>
     <dependencies>
       <group targetFramework="MonoAndroid4.4">
-        <dependency id="Square.Retrofit2" version="2.9.0" />
-        <dependency id="Xamarin.Android.Support.Constraint.Layout" version="2.0.1" />
-        <dependency id="Xamarin.Android.Support.v4" version="28.0.0.3" />
-        <dependency id="Xamarin.Android.Support.Design" version="28.0.0.3" />
     		<dependency id="Xamarin.AndroidX.Browser" version="1.3.0.8" />
         <dependency id="Xamarin.AndroidX.ConstraintLayout" version="2.1.1" />
         <dependency id="Xamarin.AndroidX.ConstraintLayout.Solver" version="2.0.4.5" />
@@ -25,7 +21,7 @@
         <dependency id="Xamarin.AndroidX.Legacy.Support.V4" version="1.0.0.10" />
         <dependency id="Xamarin.AndroidX.Lifecycle.LiveData" version="2.3.1.3" />
         <dependency id="Xamarin.Google.Android.Material" version="1.3.0.1" />
-        <dependency id="XAB.FlexboxLayout" version="2.0.1" />
+        <dependency id="XAB.FlexboxLayout" version="3.0.0" />
         <dependency id="GoogleGson" version="2.8.6" />
         <dependency id="Square.OkHttp3" version="4.9.2.1" />
         <dependency id="Square.Retrofit2" version="2.9.0" />
